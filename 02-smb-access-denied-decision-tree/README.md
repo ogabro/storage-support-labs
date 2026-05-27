@@ -94,3 +94,20 @@ See:
 samples/one-user-access-denied-report.md
 ```
 
+
+## Report Generator
+
+This lab includes a small PowerShell helper that turns ticket evidence into a Markdown report:
+
+```powershell
+.\scripts\New-SmbAccessDeniedReport.ps1 `
+  -AffectedUser "Youssef" `
+  -FailingUncPath "\\fileserver01\Projects" `
+  -UserCanAccessEmail Yes `
+  -UserCanAccessOtherShareSameServer Yes `
+  -OtherUserCanAccessFailingShare Yes `
+  -ComputerScope MultipleComputers `
+  -OutputPath ".\samples\sample-generated-access-denied-report.md"
+```
+
+The script does not modify permissions. It creates a client-readable report with likely category, evidence, first checks, safe-change boundary, and validation step.
