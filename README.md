@@ -18,6 +18,7 @@ The goal is simple: turn infrastructure troubleshooting into repeatable checks, 
 | Lab | Focus | Status |
 | --- | --- | --- |
 | `01-smb-mapped-drive-troubleshooting` | Windows mapped drives, UNC paths, SMB access errors | In progress |
+| `02-smb-access-denied-decision-tree` | Authentication vs permissions, one-user access denied, safe permission checks | In progress |
 
 ## Operating Style
 
@@ -38,4 +39,3 @@ Windows client -> DNS/VPN/network -> SMB server/NAS -> share permission -> files
 ```
 
 This repo captures those layers in a way that is useful for support, consulting, and enterprise infrastructure work.
-
