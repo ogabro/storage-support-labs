@@ -19,6 +19,7 @@ The goal is simple: turn infrastructure troubleshooting into repeatable checks, 
 | --- | --- | --- |
 | `01-smb-mapped-drive-troubleshooting` | Windows mapped drives, UNC paths, SMB access errors | In progress |
 | `02-smb-access-denied-decision-tree` | Authentication vs permissions, one-user access denied, safe permission checks | In progress |
+| `03-nas-permission-audit` | NAS/share permission review, risk scoring, owner approval workflow | In progress |
 
 ## Operating Style
 
